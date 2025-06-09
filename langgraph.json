@@ -1,0 +1,18 @@
+{
+  "dependencies": [".", "langchain_openai"],
+  "graphs": {
+    "swarm_assistant" : "./src/compiled_graphs.py:swarm_graph", 
+    "supervisor" : "./src/compiled_graphs.py:supervisor_graph", 
+    "email_assistant" : "./src/compiled_graphs.py:email_agent", 
+    "calendar_assistant" : "./src/compiled_graphs.py:calendar_agent",
+    "memory_assistant" : "./src/compiled_graphs.py:memory_agent",
+    "bigtools" : "./src/compiled_graphs.py:bigtool_agent"
+
+
+  }, 
+  "store" : {
+    "index": {
+      "embed": "./src/compiled_graphs.py:embeddings"
+    }
+}
+}
